@@ -1,0 +1,58 @@
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+@media (max-width : 991px) {
+    #header .logo img {
+        max-height: 70px !important;
+    }
+    .banner-end h3{
+        font-size: xx-large;
+        color: #fff;
+    }
+}
+.banner-end{
+    margin-top: -80px;
+    color: #fff;
+}
+
+#header{
+    background: url('../Assets/homebanner.png') !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    /* font-family: "Poppins" sans-serif !important; */
+    transition: all 0.5s;
+    z-index: 997;
+    height: 80vh;
+}
+
+#header .logo a {
+    color: #026fe0;
+}
+
+.logo img {
+    max-height: 90px;
+}
+
+.navbar {
+    background-color: transparent;
+}
+
+.navbar a {
+    font-size: medium;
+    font-weight: 500;
+    color: #000;
+}
+
+.navActive a.active {
+    color: rgb(68, 68, 255) !important;
+}
+
+@media (max-width : 991px) {
+    /* .navbar-toggler {
+      padding: 20px;
+      border-radius: 10px !important;
+      border: 10px #000 solid ;
+      background-color: lightskyblue;
+    } */
+  }
+  
