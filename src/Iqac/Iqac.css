@@ -28,11 +28,14 @@
     top: -50%;
     left: 100%;
     margin-left: -80px;
-    border: 4px solid #002858;
+    border: 4px solid #172d8e;
     border-radius: 10px;
   }
-  
-  .tooltipCustom:hover .tooltipCustomtext {
-    visibility: visible;
-    opacity: 1;
+  .mission-heading .mission-headingtext::before{
+    margin-left: -100px;
   }
+  @media (max-width : 991px) {
+    .heading .headingtext::before {
+      left: 115% !important;
+    }
+}

@@ -2,12 +2,28 @@
 # Header
 --------------------------------------------------------------*/
 @media (max-width : 991px) {
+    #header{
+        background: url('../Assets/homebanner.png') !important;
+        background-size: cover !important;
+        background-repeat: no-repeat !important;
+        /* height: 80vh; */
+
+    }
     #header .logo img {
         max-height: 70px !important;
     }
     .banner-end h3{
         font-size: xx-large;
         color: #fff;
+    }
+    .navbar a{
+        color: #000 !important;
+        font-size: 20px !important;
+        font-weight: 600;
+    }
+    .navbar-nav{
+        margin: 20px;
+
     }
 }
 .banner-end{
@@ -16,7 +32,7 @@
 }
 
 #header{
-    background: url('../Assets/homebanner.png') !important;
+    background: url('../Assets/hero-banner.jpg') ;
     background-size: cover !important;
     background-repeat: no-repeat !important;
     /* font-family: "Poppins" sans-serif !important; */
@@ -30,24 +46,26 @@
 }
 
 .logo img {
-    max-height: 90px;
-}
-
-.navbar {
-    background-color: transparent;
+    max-height: 90px !important;
 }
 
 .navbar a {
-    font-size: medium;
-    font-weight: 500;
-    color: #000;
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    text-decoration: none;
 }
 
-.navActive a.active {
-    color: rgb(68, 68, 255) !important;
+.navActive a {
+    text-decoration: none !important;
+    color: rgb(16, 11, 123) !important;
 }
 
-@media (max-width : 991px) {
+@media (min-width : 991px) {
+    .navbar-collapse {
+        margin-left: 160px !important;
+        /* background-color: #000; */
+    }
     /* .navbar-toggler {
       padding: 20px;
       border-radius: 10px !important;
@@ -56,3 +74,32 @@
     } */
   }
   
+  /* Color of the links BEFORE scroll */
+.navbar-scroll .nav-link,
+.navbar-scroll .navbar-toggler-icon,
+.navbar-scroll {
+  color: #fff;
+}
+
+/* Color of the links AFTER scroll */
+.navbar-scrolled .nav-link,
+.navbar-scrolled .navbar-toggler-icon,
+.navbar-scrolled  {
+  color: #fff;
+}
+
+/* Color of the navbar AFTER scroll */
+.navbar-scroll,
+.navbar-scrolled {
+  background-color: #cbbcb1;
+}
+
+.mask-custom {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, .15);
+}
+
+.navbar-brand {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+}
