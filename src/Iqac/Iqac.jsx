@@ -6,6 +6,9 @@ import banner1 from './Assets/banner-1.webp'
 import banner2 from './Assets/NAAC.jpg'
 import banner3 from './Assets/banner-2.webp'
 import banner4 from './Assets/banner-3.jpg'
+import tickIcon from './Assets/tick-inside-circle1.png'
+import tickIcon1 from './Assets/tick-inside-circle.png'
+import { Link } from 'react-router-dom'
 
 const iqac = () => {
   return (
@@ -99,6 +102,40 @@ const iqac = () => {
 
           </div>
 
+        </div>
+      </div>
+      <div className='container-fluid bg-outcome-container'>
+        <div className='outcomes-heading mb-5 text-center'>
+          <h1 className='outcomes-headingtext '>Outcomes Of Activities</h1>
+        </div>
+        <div className='container'>
+          <div className='text-center'>
+          <p>Outcomes of Activities of IQAC at SIT</p>
+          </div>
+          <div className='row'>
+            <div className='col-lg-6 col-12 col-bg1 p-5'>
+              <ul className='list-unstyled'>
+                <li><img src={tickIcon} alt="tickIcon" width={20} height={20} /><Link to={'https://sethu.ac.in/national-assessment-and-accreditation-council/'} className='text-white'>NAAC</Link></li>
+                <li><img src={tickIcon} alt="tickIcon" width={20} height={20} /><Link to={'#'} className='text-white'>Quality Indicators</Link></li>
+                <li><img src={tickIcon} alt="tickIcon" width={20} height={20} /><Link to={'#'} className='text-white'>IQAC Members</Link></li>
+                <li><img src={tickIcon} alt="tickIcon" width={20} height={20} /> <Link to={'https://sethu.ac.in/iqac-meeting-minutes/'} className='text-white'>IQAC Minutes</Link></li>
+                <li><img src={tickIcon} alt="tickIcon" width={20} height={20} /> <Link to={'https://sethu.ac.in/iqac-aqar-report/'} className='text-white'>AQAR Reports</Link></li>
+                <li><img src={tickIcon} alt="tickIcon" width={20} height={20} /> <Link to={'https://sethu.ac.in/wp-content/uploads/2022/03/7.3.1-Instituional-Distinctiveness_Weblink_Final.pdf'} className='text-white'>Institutional Distinctiveness</Link></li>
+                <li><img src={tickIcon} alt="tickIcon" width={20} height={20} /><Link to={'https://sethu.ac.in/iqac-functions-and-composition/'} className='text-white'>Functions and Composition</Link></li>
+              </ul>
+            </div>
+            <div className="col-lg-6 col-12 col-bg2 p-5">
+            <ul className='list-unstyled'>
+                <li><img src={tickIcon1} alt="tickIcon" width={20} height={20} /><Link to={'https://sethu.ac.in/wp-content/uploads/2023/03/6.1.2-Strategic-plan-book-with-chart_2016-2022.pdf'} className='text-dark'>Strategic Plan</Link></li>
+                <li><img src={tickIcon1} alt="tickIcon" width={20} height={20} /><Link to={'https://sethu.ac.in/wp-content/uploads/2023/07/Strategic-plan-2022-2027.pdf'} className='text-dark'>Strategic Plan 2022-2027</Link></li>
+                <li><img src={tickIcon1} alt="tickIcon" width={20} height={20} /><Link to={'https://sethu.ac.in/iqac-programs-organized/'} className='text-dark'>Program Organized</Link></li>
+                <li><img src={tickIcon1} alt="tickIcon" width={20} height={20} /><Link to={'https://sethu.ac.in/wp-content/uploads/2023/07/peer-team-audit.pdf'} className='text-dark'>Peer Commitee Report</Link></li>
+                <li><img src={tickIcon1} alt="tickIcon" width={20} height={20} /><Link to={'https://sethu.ac.in/seminar/'} className='text-dark'>Seminar</Link></li>
+                <li><img src={tickIcon1} alt="tickIcon" width={20} height={20} /><Link to={'https://sethu.ac.in/category/best-practices/'} className='text-dark'>Best Practices</Link></li>
+                <li><img src={tickIcon1} alt="tickIcon" width={20} height={20} /><Link to={'https://sethu.ac.in/student-satisfaction-survey-1/'} className='text-dark'>Student Satisfication Survey</Link></li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
     </>

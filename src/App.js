@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       <>
-            <Router>
+            <Router basename='/Sethu-IQAC'>
                 <Routes>
                     <Route exact path='/' element={<Iqac />} />
                 </Routes>
