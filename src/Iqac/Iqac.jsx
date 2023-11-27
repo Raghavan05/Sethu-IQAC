@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 // import {Link} from 'react-router-dom'
 import './Iqac.css'
 import Navbar from './Navbar/Navbar'
@@ -10,11 +10,31 @@ import tickIcon from './Assets/tick-inside-circle1.png'
 import tickIcon1 from './Assets/tick-inside-circle.png'
 import { Link } from 'react-router-dom'
 
-const iqac = () => {
+const Iqac = () => {
+  useEffect(() => {
+    const handleScroll = () => {
+      const elements = document.querySelectorAll('.reveal');
+      elements.forEach((element) => {
+        const rect = element.getBoundingClientRect();
+        const windowHeight = window.innerHeight;
+        if (rect.top < windowHeight && rect.bottom >= 0) {
+          element.classList.add('reveal_visible');
+        }
+      });
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    // Clean up on component unmount
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  
   return (
     <>
       <Navbar />
-      <div className="container" style={{ marginTop: '60px' }}>
+      <div className="container reveal" style={{ marginTop: '60px' }}>
         <div className="row mb-5 m-2">
           <div className="col-lg-6 mt-5 ml-auto d-lg-none">
             <img src={banner1} alt="Images" class="img-fluid" style={{ borderRadius: "15px" }} />
@@ -44,7 +64,7 @@ const iqac = () => {
           </div>
         </div>
       </div>
-      <div className="container" style={{ marginTop: '60px' }}>
+      <div className="container reveal" style={{ marginTop: '60px' }}>
         <div className="row mb-5 m-2">
           {/* <div className="col-lg-1"></div> */}
           <div className="col-lg-4 mt-5 ml-auto">
@@ -63,7 +83,7 @@ const iqac = () => {
           </div>
         </div>
       </div>
-      <div className="container" style={{ marginTop: '60px' }}>
+      <div className="container reveal" style={{ marginTop: '60px' }}>
         <div className="row mb-5 m-2">
           <div className="col-lg-6 ml-auto d-lg-none">
             <img src={banner3} alt="Images" class="img-fluid" style={{ borderRadius: "15px" }} />
@@ -80,7 +100,7 @@ const iqac = () => {
           </div>
         </div>
       </div>
-      <div className="container" style={{ marginTop: '60px' }}>
+      <div className="container reveal" style={{ marginTop: '60px' }}>
         <div className="row mb-5 m-2">
         <div className="col-lg-"></div>
           <div className="col-lg-6  mt-5 ml-auto">
@@ -104,7 +124,7 @@ const iqac = () => {
 
         </div>
       </div>
-      <div className='container-fluid bg-outcome-container'>
+      <div className='container-fluid bg-outcome-container reveal'>
         <div className='outcomes-heading mb-5 text-center'>
           <h1 className='outcomes-headingtext '>Outcomes Of Activities</h1>
         </div>
@@ -142,4 +162,4 @@ const iqac = () => {
   )
 }
 
-export default iqac
+export default Iqac

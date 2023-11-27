@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Sethu-IQAC/static/css/main.539d23e9.css",
-    "main.js": "/Sethu-IQAC/static/js/main.4aad12a0.js",
+    "main.css": "/Sethu-IQAC/static/css/main.2ea9fa36.css",
+    "main.js": "/Sethu-IQAC/static/js/main.5fb86270.js",
     "static/js/787.18e32452.chunk.js": "/Sethu-IQAC/static/js/787.18e32452.chunk.js",
+    "static/media/logo002.png": "/Sethu-IQAC/static/media/logo002.85b02fc5cdfafe2d1d33.png",
     "static/media/banner-1.webp": "/Sethu-IQAC/static/media/banner-1.51f1bf01fbe2d526251a.webp",
     "static/media/banner-2.webp": "/Sethu-IQAC/static/media/banner-2.fd380171225d7b75a636.webp",
     "static/media/banner-3.jpg": "/Sethu-IQAC/static/media/banner-3.be19acd4451464d80f65.jpg",
     "static/media/hero-banner.jpg": "/Sethu-IQAC/static/media/hero-banner.05941ea236154a643bde.jpg",
     "static/media/NAAC.jpg": "/Sethu-IQAC/static/media/NAAC.24bcf85cc125b657008f.jpg",
-    "static/media/logo2.png": "/Sethu-IQAC/static/media/logo2.2e203159c27999edf7a2.png",
     "static/media/homebanner.png": "/Sethu-IQAC/static/media/homebanner.73d87dfb9a695d3c963f.png",
     "index.html": "/Sethu-IQAC/index.html",
-    "main.539d23e9.css.map": "/Sethu-IQAC/static/css/main.539d23e9.css.map",
-    "main.4aad12a0.js.map": "/Sethu-IQAC/static/js/main.4aad12a0.js.map",
+    "main.2ea9fa36.css.map": "/Sethu-IQAC/static/css/main.2ea9fa36.css.map",
+    "main.5fb86270.js.map": "/Sethu-IQAC/static/js/main.5fb86270.js.map",
     "787.18e32452.chunk.js.map": "/Sethu-IQAC/static/js/787.18e32452.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.539d23e9.css",
-    "static/js/main.4aad12a0.js"
+    "static/css/main.2ea9fa36.css",
+    "static/js/main.5fb86270.js"
   ]
 }

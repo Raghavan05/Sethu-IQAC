@@ -81,3 +81,15 @@
 .col-bg2 ul li img{
   margin-right: 10px;
 }
+
+
+.reveal {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.8s, transform 0.8s;
+}
+
+.reveal_visible {
+  opacity: 1;
+  transform: translateY(0);
+}
